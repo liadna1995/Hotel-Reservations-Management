@@ -74,8 +74,7 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
 ## Tasks
 
 1. Go over the [Data Modeling](https://trailhead.salesforce.com/content/learn/modules/data_modeling) module to understand Salesforce objects.
-2. Create a [Salesforce App](https://trailhead.salesforce.com/content/learn/projects/suggestion_box/suggestion_box_1) for the "Hotel Reservations" Management App. Please note - we do not expect you to create a mobile app or a website; please use Salesforce tools in order to simplify this task.
-3. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where an Hotel Account Manager will be able to perform the following actions:
+2. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where an Hotel Account Manager will be able to perform the following actions:
     - Add a new Hotel with an address and image.
     - Add a Room Type for the Hotel, with the amount of rooms available for that type.
     - Book a reservation for an Hotel room to a Contact with a specific date.
@@ -84,11 +83,12 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
     - See all the Hotels in a Google Map compoennt.
     - Search for Hotel and see the result in a grid view with the Hotel image and name. 
     - Choose a customer by searching his email address; Create a new customer by entering their contact details (name, address, etc.) and edit existing customers.
+3. Add the Lightning Web Components to the "Home" [App Page](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/lightning_app_builder_apphome) under the Hotel Reservations Management App.
 4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
 ## Entity Relationship Diagram
 
-![alt text](common/images/Hotel%20Reservation%20ERD.png "Logo Title Text 1")
+![alt text](common/images/Hotel%20Reservation%20ERD.png "ERD")
 
 
 # Submission Instructions
