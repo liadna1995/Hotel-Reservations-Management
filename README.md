@@ -33,7 +33,7 @@ This home assignment will allow you to demonstrate your development abilities. T
     ```
     sfdx force:org:open -u mydevorg
     ```
-6. In your Developer Org App Launcher, select the Dreamloan app.
+6. In your Developer Org App Launcher, select the Hotel Reservations Management App.
 
 ## Note on Sample Data Import
 
