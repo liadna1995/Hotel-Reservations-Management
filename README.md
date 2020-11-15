@@ -65,11 +65,11 @@ npm run prettier
 
 # Assignment Description
 
-Build an Hotel Reservations Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Rooms; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
+Build an Hotel Reservations Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Room Types; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
 
 **Notes:**
 - The links provided in the Tasks section provides general guidance and examples.
-- Please feel free to add any feature or change you like to the data model (e.g. adding new field).
+- Please feel free to add any feature or changes you like to the data model (e.g. adding new field).
 
 ## Tasks
 
@@ -81,9 +81,8 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
       - Note that a contact can't booked two rooms at the same dates, a message should appear on screen to indicate that.
       - Note that a contact can't book a room of a specific type where all the rooms are already booked, a message should appear on screen to indicate that.
     - See all the Hotels in a Google Map compoennt.
-    - Search for Hotel and see the result in a grid view with the Hotel image and name. 
-    - Choose a customer by searching his email address; Create a new customer by entering their contact details (name, address, etc.) and edit existing customers.
-3. Add the Lightning Web Components to the "Home" [App Page](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/lightning_app_builder_apphome) under the Hotel Reservations Management App.
+    - Search for Hotel and see the result in a grid view with the Hotel image and name.
+3. Add the Lightning Web Components you built to the "Home" [App Page](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/lightning_app_builder_apphome) under the Hotel Reservations Management App.
 4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
 ## Entity Relationship Diagram
