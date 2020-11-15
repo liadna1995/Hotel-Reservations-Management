@@ -1,8 +1,15 @@
+
+----------
+
+![alt text](common/images/lendaicolorlogo.png "LendAILogo")
+
 # lendai-sf-home-assignment
 
 Lend AI is a fintech company that provides a simple and cost-effective financing to private investment properties in the US for non-US citizens.
 
 This home assignment will allow you to demonstrate your development abilities. There is no single correct answer; there are many solutions that could work. We want you to demonstrate your abilities on the Salesforce platform and any additional tool that may be necessary. 
+
+<div style="page-break-after: always;"></div>
 
 # Initial setup of a Salesforce Developer Edition Org and Visual Studio Code
 
@@ -34,6 +41,8 @@ This home assignment will allow you to demonstrate your development abilities. T
     ```
 6. In your Developer Org App Launcher, select the Hotel Reservations Management App.
 
+<div style="page-break-after: always;"></div>
+
 ## Optional Installation Instructions
 
 This repository contains several files that are relevant if you want to integrate modern web development tooling to your Salesforce development processes, or to your continuous integration/continuous deployment processes.
@@ -62,6 +71,8 @@ npm run lint:lwc
 npm run prettier
 ```
 
+<div style="page-break-after: always;"></div>
+
 ----------
 
 ![alt text](common/images/lendaicolorlogo.png "LendAILogo")
@@ -88,6 +99,8 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
 3. Add the Lightning Web Components you built to the "Home" [App Page](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/lightning_app_builder_apphome) under the Hotel Reservations Management App.
 4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
+<div style="page-break-after: always;"></div>
+
 ## Entity Relationship Diagram
 
 ![alt text](common/images/Hotel%20Reservation%20ERD.png "ERD")
@@ -95,7 +108,7 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
 
 # Submission Instructions
 
-Once done please provide the following via email to office@lend-ai.com:
+Once done please provide the following via email to **office@lend-ai.com**:
 - Credentials (Username + Password) of your developer account.
 
 **Good luck!**
