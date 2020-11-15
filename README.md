@@ -92,7 +92,7 @@ Build an Hotel Reservation Management App. This app will allows an Hotel Account
 
 ## Entity Relationship Diagram
 
-![alt text](https://github.com/Lend-AI/lendai-sf-home-assignment/common/images/icon48.png "Logo Title Text 1")
+![alt text](common/images/Hotel%20Reservation%20ERD.png "Logo Title Text 1")
 
 
 # Submission Instructions
