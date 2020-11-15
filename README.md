@@ -10,7 +10,7 @@ This home assignment will allow you to demonstrate your development abilities. T
 2. Login to you new Developer Edition Org and go to **Setup**, under **My Domain**, [register a My Domain](https://help.salesforce.com/articleView?id=domain_name_setup.htm&type=5).
 3. [Install Development Tools](https://trailhead.salesforce.com/content/learn/projects/set-up-your-lightning-web-components-developer-tools/install-development-tools?trail_id=build-lightning-web-components)
 
-# Installing the *TODO* App using a Developer Edition Org
+# Installing the *Hotel Reservation* Management App using a Developer Edition Org
 
 1. Clone this repository:
     ```
@@ -69,7 +69,7 @@ npm run prettier
 
 # Assignment Description
 
-Build a Loaner Properties Management App. This app will allows a Loaner to add propertis with an Address and Images; See all the properties on a map; Search for properties and see property details.
+Build an Hotel Reservation Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Rooms; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
 
 **Notes:**
 - The links provided in the Tasks section provides general guidance and examples.
@@ -78,14 +78,17 @@ Build a Loaner Properties Management App. This app will allows a Loaner to add p
 ## Tasks
 
 1. Go over the [Data Modeling](https://trailhead.salesforce.com/content/learn/modules/data_modeling) module to understand Salesforce objects.
-2. Create a [Salesforce App](https://trailhead.salesforce.com/content/learn/projects/suggestion_box/suggestion_box_1) for the Loaner Properties Management App. Please note - we do not expect you to create a mobile app or a website; please use Salesforce tools in order to simplify this task.
-3. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where an employee will be able to perform the following actions:
-    - The employee will be able to choose a customer by searching his email address; Create a new customer by entering their contact details (name, address, etc.) and edit existing customers.
-    - Create a new order with all the products the customer wants to buy.
-    - If the employee chooses a product which has no available inventory units, a message will appear which states that this order will take more than a week; The employee will have to confirm he has read this message.
-    - The employee will be able to submit the entire order; After submitting the order, an order summary will appear.
-    - The employee will be able to print or save the order summary.
-  4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
+2. Create a [Salesforce App](https://trailhead.salesforce.com/content/learn/projects/suggestion_box/suggestion_box_1) for the "Hotel Reservation" Management App. Please note - we do not expect you to create a mobile app or a website; please use Salesforce tools in order to simplify this task.
+3. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where an Hotel Account Manager will be able to perform the following actions:
+    - Add a new Hotel with an address and image.
+    - Add a Room Type for the Hotel, with the amount of rooms available for that type.
+    - Book a reservation for an Hotel room to a Contact with a specific date.
+      - Note that a contact can't booked two rooms at the same dates, a message should appear on screen to indicate that.
+      - Note that a contact can't book a room of a specific type where all the rooms are already booked, a message should appear on screen to indicate that.
+    - See all the Hotels in a Google Map compoennt.
+    - Search for Hotel and see the result in a grid view with the Hotel image and name. 
+    - Choose a customer by searching his email address; Create a new customer by entering their contact details (name, address, etc.) and edit existing customers.
+4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
 # Submission Instructions
 
