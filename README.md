@@ -63,6 +63,10 @@ npm run lint:lwc
 npm run prettier
 ```
 
+----------
+
+![alt text](common/images/lendaicolorlogo.png "LendAILogo")
+
 # Assignment Description
 
 Build an Hotel Reservations Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Room Types; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
