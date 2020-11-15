@@ -46,7 +46,7 @@
       "NaicsDesc": null,
       "YearStarted": null,
       "SicDesc": null,
-      "Picture__c": "/sfc/servlet.shepherd/document/download/0691j000001QES0AAO?operationContext=S1"
+      "Picture__c": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/87/92/8792_v7.jpeg"
     },
     {
       "attributes": {
@@ -142,7 +142,7 @@
       "NaicsDesc": null,
       "YearStarted": null,
       "SicDesc": null,
-      "Picture__c": "/sfc/servlet.shepherd/document/download/0691j000001QERMAA4?operationContext=S1"
+      "Picture__c": "https://i.pinimg.com/originals/10/a9/d0/10a9d0e3c41b36479eb80426bcea6664.jpg"
     }
   ]
 }
