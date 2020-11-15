@@ -69,7 +69,7 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
 
 **Notes:**
 - The links provided in the Tasks section provides general guidance and examples.
-- Please feel free to add any feature or change you like to the data model (e.g. adding new fiel).
+- Please feel free to add any feature or change you like to the data model (e.g. adding new field).
 
 ## Tasks
 
