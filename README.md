@@ -10,7 +10,7 @@ This home assignment will allow you to demonstrate your development abilities. T
 2. Login to you new Developer Edition Org and go to **Setup**, under **My Domain**, [register a My Domain](https://help.salesforce.com/articleView?id=domain_name_setup.htm&type=5).
 3. [Install Development Tools](https://trailhead.salesforce.com/content/learn/projects/set-up-your-lightning-web-components-developer-tools/install-development-tools?trail_id=build-lightning-web-components)
 
-# Installing the *Hotel Reservation* Management App using a Developer Edition Org
+# Installing the Hotel Reservations Management App using a Developer Edition Org
 
 1. Clone this repository:
     ```
@@ -69,7 +69,7 @@ npm run prettier
 
 # Assignment Description
 
-Build an Hotel Reservation Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Rooms; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
+Build an Hotel Reservations Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Rooms; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
 
 **Notes:**
 - The links provided in the Tasks section provides general guidance and examples.
@@ -78,7 +78,7 @@ Build an Hotel Reservation Management App. This app will allows an Hotel Account
 ## Tasks
 
 1. Go over the [Data Modeling](https://trailhead.salesforce.com/content/learn/modules/data_modeling) module to understand Salesforce objects.
-2. Create a [Salesforce App](https://trailhead.salesforce.com/content/learn/projects/suggestion_box/suggestion_box_1) for the "Hotel Reservation" Management App. Please note - we do not expect you to create a mobile app or a website; please use Salesforce tools in order to simplify this task.
+2. Create a [Salesforce App](https://trailhead.salesforce.com/content/learn/projects/suggestion_box/suggestion_box_1) for the "Hotel Reservations" Management App. Please note - we do not expect you to create a mobile app or a website; please use Salesforce tools in order to simplify this task.
 3. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where an Hotel Account Manager will be able to perform the following actions:
     - Add a new Hotel with an address and image.
     - Add a Room Type for the Hotel, with the amount of rooms available for that type.
