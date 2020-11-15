@@ -35,10 +35,6 @@ This home assignment will allow you to demonstrate your development abilities. T
     ```
 6. In your Developer Org App Launcher, select the Hotel Reservations Management App.
 
-## Note on Sample Data Import
-
-Properties inserted using the Salesforce CLI will appear as listed on TODAY() - 10 days. If you want to have this value randomized, perform the data import from the app Settings tab instead.
-
 ## Optional Installation Instructions
 
 This repository contains several files that are relevant if you want to integrate modern web development tooling to your Salesforce development processes, or to your continuous integration/continuous deployment processes.
