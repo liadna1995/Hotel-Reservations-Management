@@ -32,7 +32,7 @@ This home assignment will allow you to demonstrate your development abilities. T
     ```
     sfdx force:source:deploy -p force-app
     ```
-4. Import some sample data.
+4. Import some sample data:
     - Install texei plugin: ```sfdx plugins:install texei-sfdx-plugin```
     - ```sfdx texei:data:import --inputdir ./data --targetusername YourOrgUserName```
 5. If your org isn't already open, open it now:
