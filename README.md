@@ -90,6 +90,11 @@ Build an Hotel Reservation Management App. This app will allows an Hotel Account
     - Choose a customer by searching his email address; Create a new customer by entering their contact details (name, address, etc.) and edit existing customers.
 4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
+## Entity Relationship Diagram
+
+![alt text](https://github.com/Lend-AI/lendai-sf-home-assignment/common/images/icon48.png "Logo Title Text 1")
+
+
 # Submission Instructions
 
 Once done please provide the following via email to office@lend-ai.com:
