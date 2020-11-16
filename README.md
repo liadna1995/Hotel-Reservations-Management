@@ -105,12 +105,6 @@ Build a Hotel Reservations Management App. This app will allow a Hotel Account M
 
 ![alt text](common/images/Hotel%20Reservation%20ERD.png "ERD")
 
-
-# Submission Instructions
-
-Once done please provide the following via email to **office@lend-ai.com**:
-- Credentials (Username + Password) of your developer account.
-
 **Good luck!**
 
 *Lend-AI*
