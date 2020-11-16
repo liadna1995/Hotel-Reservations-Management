@@ -79,7 +79,7 @@ npm run prettier
 
 # Assignment Description
 
-Build an Hotel Reservations Management App. This app will allows an Hotel Account Manager to add new Hotels with their address and for each a set of Room Types; See all the Hotels on a map; Search for an Hotel by Name and see it's details.
+Build a Hotel Reservations Management App. This app will allow a Hotel Account Manager to add new Hotels with their address, and for each a set of Room Types; See all the Hotels on a map; Search for a Hotel by Name and see it's details.
 
 **Notes:**
 - The links provided in the Tasks section provides general guidance and examples.
@@ -88,14 +88,14 @@ Build an Hotel Reservations Management App. This app will allows an Hotel Accoun
 ## Tasks
 
 1. Go over the [Data Modeling](https://trailhead.salesforce.com/content/learn/modules/data_modeling) module to understand Salesforce objects.
-2. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where an Hotel Account Manager will be able to perform the following actions:
+2. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where a Hotel Account Manager will be able to perform the following actions:
     - Add a new Hotel with an address and image.
     - Add a Room Type for the Hotel, with the amount of rooms available for that type.
-    - Book a reservation for an Hotel room to a Contact with a specific date.
-      - Note that a contact can't booked two rooms at the same dates, a message should appear on screen to indicate that.
-      - Note that a contact can't book a room of a specific type where all the rooms are already booked, a message should appear on screen to indicate that.
+    - Book a reservation for a Hotel room to a Contact with a specific date.
+      - Note that a contact can't book two rooms on the same date, a message should appear on screen to indicate that.
+      - Note that a contact can't book a room of a specific type where all the rooms are already booked, a message should appear on the screen to indicate that.
     - See all the Hotels in a Google Map compoennt.
-    - Search for Hotel and see the result in a grid view with the Hotel image and name.
+    - Search for a Hotel and see the result in a grid view with the Hotel image and name.
 3. Add the Lightning Web Components you built to the "Home" [App Page](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/lightning_app_builder_apphome) under the Hotel Reservations Management App.
 4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
