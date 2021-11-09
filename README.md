@@ -7,7 +7,7 @@
 
 Lend AI is a fintech company that provides a simple and cost-effective financing to private investment properties in the US for non-US citizens.
 
-This home assignment will allow you to demonstrate your development abilities. There is no single correct answer; there are many solutions that could work. We want you to demonstrate your abilities on the Salesforce platform and any additional tool that may be necessary. 
+This home assignment will allow you to demonstrate your development abilities. There is no single correct answer; there are many solutions that could work. We want you to demonstrate your abilities on the Salesforce platform and any additional tool that may be necessary.
 
 <div style="page-break-after: always;"></div>
 
@@ -107,4 +107,4 @@ Build a Hotel Reservations Management App. This app will allow a Hotel Account M
 
 **Good luck!**
 
-*Lend-AI*
+*Lendai Team*
