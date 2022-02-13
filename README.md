@@ -1,5 +1,4 @@
-
-----------
+---
 
 ![alt text](common/images/lendaicolorlogo.png "LendAILogo")
 
@@ -20,25 +19,25 @@ This home assignment will allow you to demonstrate your development abilities. T
 # Installing the Hotel Reservations Management App using a Developer Edition Org
 
 1. Clone this repository:
-    ```
-    git clone https://github.com/Lend-AI/lendai-sf-home-assignment.git
-    cd lendai-sf-home-assignment
-    ```
+   ```
+   git clone https://github.com/Lend-AI/lendai-sf-home-assignment.git
+   cd lendai-sf-home-assignment
+   ```
 2. Authorize your Developer Org and provide it with an alias (mydevorg in the command below):
-    ```
-    sfdx force:auth:web:login -s -a mydevorg
-    ```
+   ```
+   sfdx force:auth:web:login -s -a mydevorg
+   ```
 3. Run this command in a terminal to deploy the app.
-    ```
-    sfdx force:source:deploy -p force-app
-    ```
+   ```
+   sfdx force:source:deploy -p force-app
+   ```
 4. Import some sample data:
-    - Install texei plugin: ```sfdx plugins:install texei-sfdx-plugin```
-    - ```sfdx texei:data:import --inputdir ./data --targetusername YourOrgUserName```
+   - Install texei plugin: `sfdx plugins:install texei-sfdx-plugin`
+   - `sfdx texei:data:import --inputdir ./data --targetusername YourOrgUserName`
 5. If your org isn't already open, open it now:
-    ```
-    sfdx force:org:open -u mydevorg
-    ```
+   ```
+   sfdx force:org:open -u mydevorg
+   ```
 6. In your Developer Org App Launcher, select the Hotel Reservations Management App.
 
 <div style="page-break-after: always;"></div>
@@ -49,7 +48,7 @@ This repository contains several files that are relevant if you want to integrat
 
 ### Code formatting
 
-[Prettier](https://prettier.io 'https://prettier.io/') is a code formatter used to ensure consistent formatting across your code base. To use Prettier with Visual Studio Code, install [this extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) from the Visual Studio Code Marketplace. The [.prettierignore](/.prettierignore) and [.prettierrc](/.prettierrc) files are provided as part of this repository to control the behavior of the Prettier formatter.
+[Prettier](https://prettier.io "https://prettier.io/") is a code formatter used to ensure consistent formatting across your code base. To use Prettier with Visual Studio Code, install [this extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) from the Visual Studio Code Marketplace. The [.prettierignore](/.prettierignore) and [.prettierrc](/.prettierrc) files are provided as part of this repository to control the behavior of the Prettier formatter.
 
 ### Code linting
 
@@ -73,7 +72,7 @@ npm run prettier
 
 <div style="page-break-after: always;"></div>
 
-----------
+---
 
 ![alt text](common/images/lendaicolorlogo.png "LendAILogo")
 
@@ -82,6 +81,7 @@ npm run prettier
 Build a Hotel Reservations Management App. This app will allow a Hotel Account Manager to add new Hotels with their address, and for each a set of Room Types; See all the Hotels on a map; Search for a Hotel by Name and see it's details.
 
 **Notes:**
+
 - The links provided in the Tasks section provides general guidance and examples.
 - Please feel free to add any feature or changes you like to the data model (e.g. adding new field).
 
@@ -89,13 +89,13 @@ Build a Hotel Reservations Management App. This app will allow a Hotel Account M
 
 1. Go over the [Data Modeling](https://trailhead.salesforce.com/content/learn/modules/data_modeling) module to understand Salesforce objects.
 2. Create one or more [Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started) where a Hotel Account Manager will be able to perform the following actions:
-    - Add a new Hotel with an address and image.
-    - Add a Room Type for the Hotel, with the amount of rooms available for that type.
-    - Book a reservation for a Hotel room to a Contact with a specific date.
-      - Note that a contact can't book two rooms on the same date, a message should appear on screen to indicate that.
-      - Note that a contact can't book a room of a specific type where all the rooms are already booked, a message should appear on the screen to indicate that.
-    - See all the Hotels in a Google Map compoennt.
-    - Search for a Hotel and see the result in a grid view with the Hotel image and name.
+   - Add a new Hotel with an address and image.
+   - Add a Room Type for the Hotel, with the amount of rooms available for that type.
+   - Book a reservation for a Hotel room to a Contact with a specific date.
+     - Note that a contact can't book two rooms on the same date, a message should appear on screen to indicate that.
+     - Note that a contact can't book a room of a specific type where all the rooms are already booked, a message should appear on the screen to indicate that.
+   - See all the Hotels in a Google Map compoennt.
+   - Search for a Hotel and see the result in a grid view with the Hotel image and name.
 3. Add the Lightning Web Components you built to the "Home" [App Page](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/lightning_app_builder_apphome) under the Hotel Reservations Management App.
 4. [Deploy](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component?trailmix_creator_id=ngoldenberg&trailmix_slug=lwc-getting-started#-----------deploy-to-your-trailhead-playground--) the work you have done to your Salesforce developer edition organization.
 
@@ -107,4 +107,4 @@ Build a Hotel Reservations Management App. This app will allow a Hotel Account M
 
 **Good luck!**
 
-*Lendai Team*
+_Lendai Team_
