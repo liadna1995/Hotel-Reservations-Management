@@ -1,0 +1,21 @@
+<template>
+  <p class="search_input">
+    <lightning-input
+      type="search"
+      class="slds-m-bottom_small"
+      label="Search Hotel Name"
+      onchange={handleSearchInputChange}
+      value={hotelName}
+    ></lightning-input>
+  </p>
+  <!-- <div class="slds-m-around_medium">
+        <template if:true={hotels_list}>
+            <template for:each={hotels_list} for:item="hotel">
+                <div key={hotel.Id}>
+                    {hotel.Name}
+                    <img src={hotel.Picture__c}>
+                </div>
+            </template>
+        </template>
+    </div> -->
+</template>
