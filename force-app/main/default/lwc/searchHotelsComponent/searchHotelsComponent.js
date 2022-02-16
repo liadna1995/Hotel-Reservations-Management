@@ -2,24 +2,31 @@ import { LightningElement, wire, track } from "lwc";
 import searchHotel from "@salesforce/apex/ApexController.searchHotel";
 
 export default class SearchHotelsComponent extends LightningElement {
-  hotelName;
-  hotelImgUrl;
 
-  @track hotels_list;
-  @track error_hotels_list;
+  @track hotelName = '';
+  @track hotels_list = [];
+  @track error;
+  @track searchTitle = 'Search For Hotels';
+  
+  
 
-  @wire(searchHotel, { hotelName: "$hotelName" })
-  dataTableAcc({ data, error }) {
-    if (data) {
+  @wire(searchHotel, { hotelNameArg: '$hotelName' })
+  dataTableAcc({ error, data }) {
+    if (data) { 
       this.hotels_list = data;
+      this.error = undefined;
     } else if (error) {
-      this.error_hotels_list = error;
+        this.error = error;
     }
   }
-
+  
   // Update new hotel search input
   handleSearchInputChange(event) {
     const searchString = event.target.value;
     this.hotelName = searchString;
   }
+
+
+
+  
 }
