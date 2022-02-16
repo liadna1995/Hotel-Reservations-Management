@@ -1,11 +1,19 @@
 <template>
-  <div class="slds-m-around_medium">
-    <label class="slds-text-heading_small">Map</label>
-    <lightning-icon icon-name="utility:location" alternative-text="Approved" title="Hotels Map"></lightning-icon>
-  </div>
-  <lightning-map 
+  <div class="slds-card">
+    <div class="slds-m-around_medium">
+      <label class="slds-text-heading_small">Map</label>
+      <lightning-icon
+        icon-name="utility:location"
+        alternative-text="Approved"
+        title="Hotels Map"
+      ></lightning-icon>
+    </div>
+    <lightning-map
       map-markers={mapMarkers}
       markers-title={markersTitle}
-      zoom-level={zoomLevel}>
-  </lightning-map>   
+      zoom-level={zoomLevel}
+      list-view="visible"
+    >
+    </lightning-map>
+  </div>
 </template>
