@@ -7,6 +7,7 @@ export default class SearchHotelsComponent extends LightningElement {
   @track error;
   @track searchTitle = "Search For Hotels";
 
+  // Wire will help get the output of our apex class function
   @wire(searchHotel, { hotelNameArg: "$hotelName" })
   dataTableAcc({ error, data }) {
     if (data) {
@@ -20,12 +21,12 @@ export default class SearchHotelsComponent extends LightningElement {
           "https://ass-liad-dev-ed.lightning.force.com/lightning/r/Account/" +
           row.Id +
           "/view";
-        console.log(row);
         if (row.Picture__c === undefined) {
           // No image available picture
           row.Picture__c =
             "https://www.segen.co.uk/wp-content/uploads/2020/12/SE-25000-R4-APP.jpg";
         }
+        console.log(row);
         rows.push(row);
       }
 
