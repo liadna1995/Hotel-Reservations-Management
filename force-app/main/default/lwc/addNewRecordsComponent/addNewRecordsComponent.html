@@ -46,12 +46,9 @@
                 object-api-name={ObjectApiName}
                 fields={fields}
                 onsuccess={handleSuccess}
+                oncancel={closeModal}
                 >
                 </lightning-record-form>
-                <footer class="slds-modal__footer">
-                    <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
-                    <button class="slds-button slds-button_brand" onclick={submitDetails} title="OK">OK</button>
-                </footer>
             </div>
         </section>
         <div class="slds-backdrop slds-backdrop_open"></div>

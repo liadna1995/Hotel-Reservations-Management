@@ -5,6 +5,7 @@ export default class AddNewRecordsComponent extends LightningElement {
     @track ObjectApiName = '';
     @track fields = [];
     @track title='';
+    @track toast_title='';
     @track choice = '';
     @track isModalOpen = false;
     handleChoiceMade(event){
@@ -13,18 +14,22 @@ export default class AddNewRecordsComponent extends LightningElement {
         if(this.choice === "menu_add_hotel"){
             this.ObjectApiName = 'Account';
             this.title = "Add New Hotel";
+            this.toast_title = "New Hotel";
             this.fields = ["Name","Picture__c","BillingAddress"];
             this.isModalOpen = true;
         }
         else if(this.choice === "menu_add_room_type"){
             this.ObjectApiName = 'Room_Type__c';
             this.title = "Add New Room Type";
-            this.fields = ["Hotel__c","Number_Of_Available_Rooms__c"];
+            this.toast_title = "New Room Type";
+            this.fields = ["Name","Hotel__c","Number_Of_Available_Rooms__c"];
+            // this.fields = ["Hotel__c","Number_Of_Available_Rooms__c"];
             this.isModalOpen = true;
         }
         else if(this.choice === "menu_book_reservation"){
             this.ObjectApiName = 'Room_Reservation__c';
             this.title = "Add New Room Reservation";
+            this.toast_title = "New Room Reservation";
             this.fields = ["Contact__c","Number_Of_Rooms__c","Reservation_Date__c","Room_Type__c"];
             this.isModalOpen = true;
         }
@@ -42,8 +47,9 @@ export default class AddNewRecordsComponent extends LightningElement {
         this.isModalOpen = false;
     }
     handleSuccess(event) {
+        this.closeModal();
         const evt = new ShowToastEvent({
-            title: this.title+' created',
+            title: this.toast_title+' created',
             message: 'Record ID: ' + event.detail.id,
             variant: 'success',
         });
