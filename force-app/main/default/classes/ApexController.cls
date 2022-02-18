@@ -1,5 +1,4 @@
 public with sharing class ApexController {
-
   @AuraEnabled(cacheable=true)
   public static List<Account> searchHotel(String hotelNameArg) {
     String keyNameString = '%' + hotelNameArg + '%';

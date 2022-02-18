@@ -2,8 +2,8 @@ import { LightningElement, wire, track } from "lwc";
 import searchHotel from "@salesforce/apex/ApexController.searchHotel";
 export default class SearchHotelsComponent extends LightningElement {
   @track hotelName = "";
-	@track hotels_list;
-	@track error;
+  @track hotels_list;
+  @track error;
   // Flag for creating new records's modal window
   @track isModalOpen = false;
 
@@ -42,22 +42,19 @@ export default class SearchHotelsComponent extends LightningElement {
   }
 
   get hasResults() {
-		return (this.hotels_list.length > 0);
-	}
+    return this.hotels_list.length > 0;
+  }
 
   openModal() {
     // to open modal set isModalOpen track value as true
     this.isModalOpen = true;
-    // 
+    //
   }
   closeModal() {
-      // to close modal set isModalOpen track value as false
+    // to close modal set isModalOpen track value as false
     this.isModalOpen = false;
   }
-  resetText(){
-    this.hotelName = '';
+  resetText() {
+    this.hotelName = "";
   }
 }
-
-
-
