@@ -1,41 +1,113 @@
 <template>
-  <lightning-card title={searchTitle}>
+  <lightning-card>
     <lightning-input
       type="search"
       class="slds-m-bottom_small"
       label="Type Hotel's Name/ part of it"
-      onchange={handleSearchInputChange}
       value={hotelName}
+      onchange={handleSearchInputChange}
     ></lightning-input>
+	<lightning-button
+	label = "Search for hotels"
+	onclick={openModal}
+	></lightning-button>
+	<lightning-button
+	label = "Reset"
+	onclick={resetText}
+	></lightning-button>
   </lightning-card>
-  <!-- <div class="slds-card">
-  <div class="slds-m-around_medium">
-        <template if:true={hotels_list}>
-            <template for:each={hotels_list} for:item="hotel">
-                <div key={hotel.Id}>
-                    {hotel.Name}
-                    <img src={hotel.Picture__c}>
-                </div>
-            </template>
-        </template>
-    </div>
-  </div> -->
-  <lightning-card title="Results">
-    <div class="slds-medium-size_1-of-4 slds-align_absolute-center">
-      <lightning-carousel disable-auto-scroll>
-        <template for:each={hotels_list} for:item="hotel">
-          <lightning-carousel-image
-            if:true={hotel.Picture__c}
-            key={hotel.Id}
-            src={hotel.Picture__c}
-            header={hotel.Name}
-            description={hotel.Description}
-            alternative-text="First card accessible description."
-            href={hotel.profile_link}
-          >
-          </lightning-carousel-image>
-        </template>
-      </lightning-carousel>
-    </div>
-  </lightning-card>
+  <template if:true={isModalOpen}>
+	<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-scrollable">
+		<div class="slds-modal__container">
+			<header class="slds-modal__header">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+					<lightning-icon icon-name="utility:close"
+						alternative-text="close"
+						variant="inverse"
+						size="small" ></lightning-icon>
+					<span class="slds-assistive-text">Close</span>
+				</button>
+				<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate" title="Hotels List">Search Results</h2>
+			</header>
+			<lightning-card title="Hotels List" icon-name="utility:company">
+				<div class="slds-card__body_inner">
+					<template if:true={hotels_list}>
+						<lightning-layout multiple-rows="true" vertical-align="stretch">
+							<template for:each={hotels_list} for:item="hotel">
+								<lightning-layout-item key={hotel.Id}  size="4" class="slds-var-p-around_x-small">
+									<lightning-card title={hotel.Name} class="hotel-tile">
+										<div class="slds-var-p-horizontal_small hotel-tile-body">
+											<div class="slds-media">
+												<div class="slds-media__figure">
+													<img src={hotel.Picture__c} style="height:100px; width:100px;" alt="Hotel's profile" class="hotel-silhouette"/>
+												</div>
+												<div class="slds-media__body">
+													<p class="slds-var-m-bottom_xx-small">{hotel.Description}</p>
+												</div>
+											</div>
+										</div>
+									</lightning-card>
+								</lightning-layout-item>
+							</template>
+						</lightning-layout>
+				<template if:false={hasResults}>
+				  <div class="slds-align_absolute-center slds-var-m-vertical_small">
+					We did not find any hotel results...
+				  </div>
+				</template>
+					</template>
+					<template if:true={error}>
+						<div class="slds-text-color_error">
+							An error occurred while loading the hotels list
+						</div>
+					</template>
+				</div>
+			<footer class="slds-modal__footer">
+				<button class="slds-button slds-button_neutral" aria-label="OK" onclick={closeModal}>OK</button>
+			</footer>
+			</lightning-card>
+		</div>
+	</section>
+	<div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
 </template>
+
+
+
+
+
+  <!-- Without Modal -->
+  <!-- <lightning-card title="Hotels List" icon-name="utility:company">
+	<div class="slds-card__body_inner">
+		<template if:true={hotels_list}>
+			<lightning-layout multiple-rows="true" vertical-align="stretch">
+				<template for:each={hotels_list} for:item="hotel">
+					<lightning-layout-item key={hotel.Id}  size="4" class="slds-var-p-around_x-small">
+						<lightning-card title={hotel.Name} class="hotel-tile">
+							<div class="slds-var-p-horizontal_small hotel-tile-body">
+								<div class="slds-media">
+									<div class="slds-media__figure">
+										<img src={hotel.Picture__c} style="height:100px; width:100px;" alt="Hotel's profile" class="hotel-silhouette"/>
+									</div>
+									<div class="slds-media__body">
+										<p class="slds-var-m-bottom_xx-small">{hotel.Description}</p>
+									</div>
+								</div>
+							</div>
+						</lightning-card>
+					</lightning-layout-item>
+				</template>
+			</lightning-layout>
+	<template if:false={hasResults}>
+	  <div class="slds-align_absolute-center slds-var-m-vertical_small">
+		We did not find any hotel results...
+	  </div>
+	</template>
+		</template>
+		<template if:true={error}>
+			<div class="slds-text-color_error">
+				An error occurred while loading the hotels list
+			</div>
+		</template>
+	</div>
+</lightning-card> -->

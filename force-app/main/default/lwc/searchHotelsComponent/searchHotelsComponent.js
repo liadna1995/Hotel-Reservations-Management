@@ -1,11 +1,11 @@
 import { LightningElement, wire, track } from "lwc";
 import searchHotel from "@salesforce/apex/ApexController.searchHotel";
-
 export default class SearchHotelsComponent extends LightningElement {
   @track hotelName = "";
-  @track hotels_list = [];
-  @track error;
-  @track searchTitle = "Search For Hotels";
+	@track hotels_list;
+	@track error;
+  // Flag for creating new records's modal window
+  @track isModalOpen = false;
 
   // Wire will help get the output of our apex class function
   @wire(searchHotel, { hotelNameArg: "$hotelName" })
@@ -24,12 +24,10 @@ export default class SearchHotelsComponent extends LightningElement {
         if (row.Picture__c === undefined) {
           // No image available picture
           row.Picture__c =
-            "https://www.segen.co.uk/wp-content/uploads/2020/12/SE-25000-R4-APP.jpg";
+            "https://www.yatra.com/content/globalcdn/bongo-cdn/images/hotel/no-photo.png";
         }
-        console.log(row);
         rows.push(row);
       }
-
       this.hotels_list = rows;
       this.error = undefined;
     } else if (error) {
@@ -42,4 +40,24 @@ export default class SearchHotelsComponent extends LightningElement {
     const searchString = event.target.value;
     this.hotelName = searchString;
   }
+
+  get hasResults() {
+		return (this.hotels_list.length > 0);
+	}
+
+  openModal() {
+    // to open modal set isModalOpen track value as true
+    this.isModalOpen = true;
+    // 
+  }
+  closeModal() {
+      // to close modal set isModalOpen track value as false
+    this.isModalOpen = false;
+  }
+  resetText(){
+    this.hotelName = '';
+  }
 }
+
+
+

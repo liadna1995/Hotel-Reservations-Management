@@ -1,11 +1,12 @@
 public with sharing class ApexController {
+
   @AuraEnabled(cacheable=true)
   public static List<Account> searchHotel(String hotelNameArg) {
     String keyNameString = '%' + hotelNameArg + '%';
     List<Account> hotels_list = new List<Account>();
     if (String.isNotBlank(hotelNameArg)) {
       hotels_list = [
-        SELECT Id, Name, Picture__c, Picture_IMG__c, Description
+        SELECT Id, Name, Picture__c, Description
         FROM Account
         WHERE Name LIKE :keyNameString
       ];
